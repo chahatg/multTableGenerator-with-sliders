@@ -1,0 +1,207 @@
+#img1 {
+	max-width:100px;
+	float: left;
+	margin: 0px 0px 15px 15px;
+}
+
+#img2 {
+	max-width:100px;
+	float: right;
+	/*margin: 0px 0px 15px 15px;*/
+}
+
+body{
+	background-color: #99ffcc;
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+form{
+	font-color: blue;
+	border-style: double;
+	border-width: 3px;
+	margin: 10px;
+	padding:15px 0px 15px 0px;
+}
+
+
+#form{
+	color: ;
+	margin:15px;
+	padding: 15px 15px 30px 15px;
+	text-align: center;
+	font-weight: 600;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-style: dashed;
+	border-width: 3px;
+	color: black;
+	width: auto;
+}
+
+tr:nth-child(odd) td:nth-child(even)
+{
+    background-color: grey;
+}
+/*
+tbody > tr > td:first-child {
+  background-color: black;
+  color: white;
+}
+
+tbody > tr:first-child > td {
+  background-color: black;
+  color: white;
+}
+
+tbody > tr:first-child > td:first-child {
+  background-color: #ffffff;
+  border-left: none;
+  color: white;
+  opacity: 0;
+}
+
+tbody > tr > td {
+  color: black;
+  background-color: white;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+}*/
+
+#Error {
+  color: red;
+  font-size: 80%;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.error {
+color: red;
+font-size: 80%;
+font-style: italic;
+font-weight: 700;
+text-align: center;
+}
+
+input.error {
+	display: inline;
+  border: 5px solid red;
+}
+
+fieldset{
+	border: 1px solid #000000;
+	padding: 10px 20px 15px 20px;
+	margin: 0;
+}
+
+#form .ui-slider {
+    border: 1px solid #000000;
+    height: 4px;
+    margin: 15px 4px;
+}
+
+#form .ui-slider .ui-slider-handle {
+    top: -10px;
+    margin-left: -5px;
+    width: 10px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: #f49542;
+    background-image: none;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+#form .dynamicTab {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+}
+
+#tabButtons {
+    margin: 20px 0;
+}
+#tabTable {
+    border: 1px solid #000000;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#tabTable .ui-tabs-nav {
+    border-radius: 0;
+    background-image: none;
+    background-color: #333333;
+    border: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-size: 0.8em;
+}
+
+#tabTable .ui-tabs-tab {
+    
+    border-radius: 0;
+    border: 0;
+    background-color: #c4c4c4;
+    background-image: none;
+    display: inline-block;
+    float: none;
+    vertical-align: bottom;
+    border-bottom: 1px solid #000000;
+}
+#tabTable .ui-tabs-active {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+#tabTable .tabClose {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+#tabTable .ui-tabs-panel {
+    height: 500px;
+    padding: 0;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+#table {
+    border-collapse: collapse;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#table tr:nth-child(even) td:nth-child(odd),
+#table tr:nth-child(odd) td:nth-child(even) {
+    /* Color every other td cell */
+    background-color: #f3b225; 
+}
+
+#table th {
+    background-color: #333333;
+    color: #f3b225; 
+    margin: 0;
+}
+
+#table th, #table td {
+    border: 2px solid #ffffff;
+    padding: 0.8em;
+}
+.hidden {
+    display: none !important;
+}
+.ui-widget {
+    border-radius: 0;
+}

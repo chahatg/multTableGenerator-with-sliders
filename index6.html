@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/c06.css">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js" defer></script>
+    <script src="js/j06.js" defer></script>
+
+  </head>
+  <body>
+  	<div class="main">
+    	<header>
+    		<img id="img1" src = "images/mult.png", alt= "picture of boy sitting on a multiplication sign">
+  			<img id="img2" src = "images/mult.png", alt= "picture of boy sitting on a multiplication sign">
+  			<h1>Multiplication Table Generator</h1>
+  		</header>
+    	<hr>
+	   	<br>
+    	<br>
+   		<br>
+    	<div id= "form">
+    		<p> Welcome! Please enter 4 numbers below:-</p>
+    		<form id= "form" novalidate>
+          <fieldset>
+            <legend>Multiplier</legend>
+            <div>
+              <label for="hStart">Horizontal Range begins at:</label>
+              <input type = "number" name = "hStart" id= "hStart" value="-75" min="-75" max="75" autocomplete="off"> <p id=error1></p><br>           
+
+              <div id="hstartSlider" class="slider"></div>
+            </div>
+
+            <div> 
+              <label for="hEnd">Horizontal Range ends at:</label>
+              <input type = "number" name = "hEnd" id= "hEnd" value="-75" min="-75" max="75" autocomplete="off"> <p id=error2></p><br>
+
+              <div id="hendSlider" class="slider"></div>
+            </div>
+          </fieldset>
+    			
+          <fieldset>
+            <legend>Multiplicand </legend>
+
+            <div>
+                <label for="vStart">Vertical Range begins at:</label>
+                <input type = "number" name = "vStart" id= "vStart" value="-75" min="-75" max="75" autocomplete="off"> <p id=error3></p><br>
+
+                <div id="vstartSlider" class="slider"></div>
+            </div>
+
+            <div>
+                <label for="vEnd">Vertical Range ends at:</label>
+                <input type = "number" name = "vEnd" id= "vEnd" value="-75" min="-75" max="75" autocomplete="off"> <p id=error4></p><br>
+
+                <div id="vendSlider" class="slider"></div>
+            </div>
+
+          </fieldset>
+          <br>
+
+          <div id="Error"></div>
+          <input type="submit" value="Generate Table">
+
+          <label class="dynamicTab">
+            <input type="checkbox" id="dynamicTab" name="dynamicTab" value="dynamicTab">
+            Dynamically update active tab
+          </label>
+        </form>
+    </div>
+
+
+	
+		<div id="MultTable"></div>
+    <!--removing tabs -->
+    <fieldset id="tabButtons" class="hidden">
+        <legend>Remove Tabs</legend>
+        <input id="removeAll" type="button" value="All">
+        <input id="removeRight" type="button" value="Right tabs">
+        <input id="removeLeft" type="button" value="Left tabs">
+    </fieldset>
+    
+    <!-- Tabbed table area -->
+    <div id="tabTable" class="hidden">
+        <ul></ul>
+    </div>
+				   	
+  
+  	<!--Call validate()
+ 	  <script> formValidation(); </script>-->
+
+  </body>
+</html>
